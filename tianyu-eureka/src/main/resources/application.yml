@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: eureka-server
+server:
+  port: 8761
+
+#以下是集群配置
+#eureka:
+#  instance:
+#    hostname: peer1
+#  #指向你的从节点的Eureka
+#  client:
+#    #两个副本节点时,分隔
+#    service-url.defaultZone: http://peer2:2222/eureka/,http://peer3:3333/eureka/
+#    # 由于该应用为注册中心，所以设置为false，代表不向注册中心注册自己 ,http://peer3:3333/eureka/
+#    register-with-eureka: true
+#    # 由于注册中心的职责就是维护服务实例，他并不需要去检索服务，所以也设置为false
+#    fetch-registry: true
+#  # 关闭自我保护
+#  server:
+#    enableSelfPreservation: false
+## 关闭自我保护
+##eureka.server.enableSelfPreservation=false
+##spring.security.basic.enabled=true
+##spring.security.user.name=root
+##spring.security.user.password=123456
+

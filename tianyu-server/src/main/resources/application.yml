@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: tianyu-server
+  profiles:
+    active: dev
+
+server:
+  port: 10200
+  servlet:
+    context-path: /tianyu
+
+ribbon:
+  ReadTimeout: 160000
+  ConnectTimeout: 160000
