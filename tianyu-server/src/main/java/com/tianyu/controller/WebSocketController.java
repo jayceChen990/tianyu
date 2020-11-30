@@ -15,7 +15,7 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
- * @author luobing
+ * websocket 接受处理常用类
  */
 @Slf4j
 @ServerEndpoint(value = "/websocket/{token}")

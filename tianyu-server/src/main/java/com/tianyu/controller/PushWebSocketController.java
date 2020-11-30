@@ -18,7 +18,7 @@ import javax.websocket.Session;
 import java.io.IOException;
 
 /**
- * @author luobing
+ * websocket 推送常用类
  */
 @Slf4j
 @RestController
